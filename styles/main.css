@@ -17,4 +17,91 @@ img {
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+.primary-btn,
+.success-btn {
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #417efb;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.success-btn {
+  background: #5dd28e;
+  margin-right: 0;
+}
+.container {
+  max-width: 1100px;
+  padding: 15px;
+  margin: 0 auto;
+}
 /* ---- default style end ---- */
+
+/* ---- header style start ---- */
+.header-section {
+  background-image: url("/images/banner");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.header-section::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.logo-text {
+  font-weight: 900;
+}
+.navber {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav li {
+  margin-right: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+}
+.sub-title {
+  font-size: 1.4rem;
+}
+.title {
+  font-size: 4rem;
+}
+.title-span {
+  font-weight: 300;
+}
+.header-bottom button {
+  width: 20%;
+}
+/* ---- header style end ---- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
