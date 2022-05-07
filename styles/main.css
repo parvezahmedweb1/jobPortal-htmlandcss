@@ -41,6 +41,9 @@ body {
 .mt {
   margin-top: 6em;
 }
+.mb {
+  margin-bottom: 6em;
+}
 /* ---- default style end ---- */
 
 /* ---- header style start ---- */
@@ -142,6 +145,41 @@ body {
   line-height: 18px;
 }
 /* ---- feature style end ---- */
+/* ---- categories style start ---- */
+.categories-head {
+  text-align: center;
+}
+.categories-head p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.categories-head h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+.categories-head h2 > span {
+  font-weight: 900;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.categorie {
+  border: 1px solid #5dd28e;
+  border-radius: 5px;
+  padding: 15px 0px 15px 15px;
+}
+.categorie h3 > span {
+  background: #e9f9ef;
+  color: #5dd28e;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+/* ---- categories style end ---- */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -171,4 +209,9 @@ body {
     margin-bottom: 20px;
   }
   /* ---- feature style end ---- */
+  /* ---- caregories style start ---- */
+  .categories {
+    grid-template-columns: 1fr;
+  }
+  /* ---- caregories style end ---- */
 }
