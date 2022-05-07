@@ -38,6 +38,9 @@ body {
   padding: 15px;
   margin: 0 auto;
 }
+.mt {
+  margin-top: 6em;
+}
 /* ---- default style end ---- */
 
 /* ---- header style start ---- */
@@ -108,6 +111,38 @@ body {
 }
 /* ---- header style end ---- */
 
+/* ---- feature style start ---- */
+.feature-section {
+  background: #f8f9fa;
+  height: 300px;
+}
+.feature-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.feature {
+  padding: 15px;
+  margin-right: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.feature img {
+  width: 65px;
+  background: #417efb;
+  padding: 5px;
+  border-radius: 50%;
+}
+.feature h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+.feature p {
+  line-height: 18px;
+}
+/* ---- feature style end ---- */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* ---- header style start ---- */
@@ -124,4 +159,16 @@ body {
     width: 25%;
   }
   /* ---- header style end ---- */
+
+  /* ---- feature style start ---- */
+  .feature-section {
+    height: 650px;
+  }
+  .feature-flex {
+    display: block;
+  }
+  .feature {
+    margin-bottom: 20px;
+  }
+  /* ---- feature style end ---- */
 }
