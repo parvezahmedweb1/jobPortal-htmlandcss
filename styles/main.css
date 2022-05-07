@@ -79,6 +79,12 @@ body {
   font-size: 1.1rem;
   cursor: pointer;
 }
+.menu-ber {
+  display: none;
+}
+.menu {
+  font-size: 1.9rem;
+}
 .header-bottom {
   display: flex;
   flex-direction: column;
@@ -104,4 +110,18 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* ---- header style start ---- */
+  .header-section {
+    background-position: center;
+  }
+  .navber {
+    display: none;
+  }
+  .menu-ber {
+    display: inline-block;
+  }
+  .header-bottom button {
+    width: 25%;
+  }
+  /* ---- header style end ---- */
 }
